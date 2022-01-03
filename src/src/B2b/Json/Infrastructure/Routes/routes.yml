@@ -1,0 +1,8 @@
+b2b.test:
+  path: /test
+  controller: 'b2b.controller.test.test'
+  methods: [GET]
+b2b.uuid:
+  path: /testuuid
+  controller: 'b2b.controller.test.uuid'
+  methods: [GET]
