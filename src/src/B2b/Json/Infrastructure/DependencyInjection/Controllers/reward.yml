@@ -1,0 +1,4 @@
+services:
+  b2b.json.controller.reward.getall:
+    class: B2b\Json\Infrastructure\Ui\Http\Controller\Reward\GetAllRewardController
+    public: true

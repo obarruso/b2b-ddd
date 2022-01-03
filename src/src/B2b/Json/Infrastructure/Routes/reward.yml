@@ -1,0 +1,4 @@
+b2b.json.reward:
+  path: /reward
+  controller: 'b2b.json.controller.reward.getall'
+  methods: [GET]
