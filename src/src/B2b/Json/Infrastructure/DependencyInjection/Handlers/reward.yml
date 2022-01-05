@@ -1,0 +1,15 @@
+services:
+  b2b.json.query.reward.getAllRewardHandler:
+    class: B2b\Json\Application\Query\Reward\getAllRewardHandler
+    arguments:
+      - '@b2b.json.repository.doctrineRewardRepository'
+
+  b2b.json.query.reward.getByIdRewardHandler:
+    class: B2b\Json\Application\Query\Reward\getByIdRewardHandler
+    arguments:
+      - '@b2b.json.repository.doctrineRewardRepository'
+
+  b2b.json.command.reward.createOneRewardHandler:
+    class: B2b\Json\Application\Command\Reward\CreateOneRewardHandler
+    arguments:
+      - '@b2b.json.repository.doctrineRewardRepository'
