@@ -16,3 +16,9 @@ services:
     arguments:
       - '@b2b.json.command.reward.createOneRewardHandler'
     public: true
+
+  b2b.json.controller.reward.removeById:
+    class: B2b\Json\Infrastructure\Ui\Http\Controller\Reward\RemoveByIdRewardController
+    arguments:
+      - '@b2b.json.command.reward.removeByIdRewardHandler'
+    public: true

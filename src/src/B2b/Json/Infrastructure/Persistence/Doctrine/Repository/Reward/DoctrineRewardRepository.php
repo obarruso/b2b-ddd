@@ -2,7 +2,6 @@
 
 namespace B2b\Json\Infrastructure\Persistence\Doctrine\Repository\Reward;
 
-use B2b\Json\Application\Response\Reward\RewardResponse;
 use B2b\Json\Domain\Model\Reward\Reward as RewardDomain;
 use B2b\Json\Domain\Model\Reward\RewardCollection;
 use B2b\Json\Domain\Model\Reward\RewardId;
@@ -20,6 +19,14 @@ class DoctrineRewardRepository extends DoctrineRepository implements RewardRepos
     {
         $reward = $this->repository->findById($id->value());
         return $reward[0]->toDomain();
+    }
+    public function remove(RewardDomain $reward): bool
+    {
+        $infrastructureReward = RewardEntity::toInfrastructure($reward);
+        $toRemoveReward = $this->entityManager->merge($infrastructureReward); 
+        $this->entityManager->remove($toRemoveReward);
+        $this->entityManager->flush();
+        return $this->entityManager->contains($toRemoveReward);
     }
     public function findAll(): RewardCollection
     {
@@ -47,6 +54,6 @@ class DoctrineRewardRepository extends DoctrineRepository implements RewardRepos
         $this->entityManager->persist($infrastructureReward);
         //$return = $this->entityManager->contains($infrastructureReward);
         $this->entityManager->flush();
-        return $this->entityManager->contains($infrastructureReward);;
+        return $this->entityManager->contains($infrastructureReward);
     }
 }

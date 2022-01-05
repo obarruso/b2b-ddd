@@ -13,3 +13,8 @@ services:
     class: B2b\Json\Application\Command\Reward\CreateOneRewardHandler
     arguments:
       - '@b2b.json.repository.doctrineRewardRepository'
+
+  b2b.json.command.reward.removeByIdRewardHandler:
+    class: B2b\Json\Application\Command\Reward\RemoveByIdRewardHandler
+    arguments:
+      - '@b2b.json.repository.doctrineRewardRepository'

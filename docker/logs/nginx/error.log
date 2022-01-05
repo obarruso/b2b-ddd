@@ -1386,3 +1386,270 @@ PHP message: [debug] Notified event "kernel.response" to listener "Symfony\Compo
 PHP message: [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\DisallowRobotsIndexingListener::onResponse".
 PHP message: [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelResponse".
 PHP message: [debug] Notified event "kernel.response" to listener "Symfony\Co
+2022/01/05 19:25:32 [error] 32#32: *137 FastCGI sent in stderr: "PHP message: [info] Matched route "b2b.json.reward".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\DebugHandlersListener::configure".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ValidateRequestListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::setDefaultLocale".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.controller_arguments" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::onControllerArguments".
+PHP message: [debug] SELECT t0.sale_date AS sale_date_1, t0.client AS client_2, t0.product AS product_3, t0.paid AS paid_4, t0.to_pay AS to_pay_5, t0.incident AS incident_6, t0.created_at AS created_at_7, t0.updated_at AS updated_at_8, t0.id AS id_9 FROM reward t0
+PHP message: [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ResponseListener::onKernelResponse".
+PHP message: [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::removeCspHeader".
+PHP message: [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\DisallowRobotsIndexingListener::onResponse".
+PHP message: [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelResponse".
+PHP message: [debug] Notified event "kerne
+2022/01/05 19:54:40 [error] 32#32: *142 FastCGI sent in stderr: "PHP message: 2022-01-05T19:54:40+00:00 [critical] Uncaught Error: syntax error, unexpected token "public", expecting "," or ";"" while reading upstream, client: 172.24.0.1, server: localhost, request: "POST /reward/add HTTP/1.1", upstream: "fastcgi://172.24.0.4:9000", host: "localhost"
+2022/01/05 19:54:51 [error] 32#32: *144 FastCGI sent in stderr: "PHP message: 2022-01-05T19:54:51+00:00 [critical] Uncaught Error: syntax error, unexpected token "public", expecting "," or ";"" while reading upstream, client: 172.24.0.1, server: localhost, request: "POST /reward/add HTTP/1.1", upstream: "fastcgi://172.24.0.4:9000", host: "localhost"
+2022/01/05 19:55:24 [error] 32#32: *146 FastCGI sent in stderr: "PHP message: 2022-01-05T19:55:24+00:00 [critical] Uncaught Error: syntax error, unexpected token "public", expecting "," or ";"" while reading upstream, client: 172.24.0.1, server: localhost, request: "POST /reward/add HTTP/1.1", upstream: "fastcgi://172.24.0.4:9000", host: "localhost"
+2022/01/05 19:56:03 [error] 32#32: *148 FastCGI sent in stderr: "PHP message: 2022-01-05T19:56:03+00:00 [critical] Uncaught Error: syntax error, unexpected token "public", expecting "," or ";"" while reading upstream, client: 172.24.0.1, server: localhost, request: "GET /rewards HTTP/1.1", upstream: "fastcgi://172.24.0.4:9000", host: "localhost"
+2022/01/05 19:56:46 [error] 32#32: *148 FastCGI sent in stderr: "PHP message: [info] Matched route "b2b.json.reward".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\DebugHandlersListener::configure".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ValidateRequestListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::setDefaultLocale".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.controller_arguments" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::onControllerArguments".
+PHP message: [debug] SELECT t0.sale_date AS sale_date_1, t0.client AS client_2, t0.product AS product_3, t0.paid AS paid_4, t0.to_pay AS to_pay_5, t0.incident AS incident_6, t0.created_at AS created_at_7, t0.updated_at AS updated_at_8, t0.id AS id_9 FROM reward t0
+PHP message: [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ResponseListener::onKernelResponse".
+PHP message: [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::removeCspHeader".
+PHP message: [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\DisallowRobotsIndexingListener::onResponse".
+PHP message: [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelResponse".
+PHP message: [debug] Notified event "kerne
+2022/01/05 19:56:52 [error] 32#32: *151 FastCGI sent in stderr: "PHP message: [info] Matched route "b2b.json.addreward".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\DebugHandlersListener::configure".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ValidateRequestListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::setDefaultLocale".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.controller_arguments" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::onControllerArguments".
+PHP message: [debug] "START TRANSACTION"
+PHP message: [debug] INSERT INTO reward (sale_date, client, product, paid, to_pay, incident, created_at, updated_at, id) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+PHP message: [debug] "COMMIT"
+PHP message: [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ResponseListener::onKernelResponse".
+PHP message: [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::removeCspHeader".
+PHP message: [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\DisallowRobotsIndexingListener::onResponse".
+PHP message: [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelResponse".
+PHP message: [debug] Notified event "kernel.response" to listener "Symfony\Co
+2022/01/05 19:58:48 [error] 32#32: *154 FastCGI sent in stderr: "PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\DebugHandlersListener::configure".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ValidateRequestListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::setDefaultLocale".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest".
+PHP message: [error] Uncaught PHP Exception Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException: "No route found for "GET http://localhost/reward/remove/820fe176-54a6-43fc-b5c3-a45d18578dea": Method Not Allowed (Allow: POST)" at /var/www/vendor/symfony/http-kernel/EventListener/RouterListener.php line 134
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\DebugHandlersListener::configure".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ValidateRequestListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::setDefaultLocale".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.controller_argume
+2022/01/05 19:59:43 [error] 32#32: *156 FastCGI sent in stderr: "PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\DebugHandlersListener::configure".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ValidateRequestListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::setDefaultLocale".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest".
+PHP message: [error] Uncaught PHP Exception Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException: "No route found for "POST http://localhost/reward/remove": Method Not Allowed (Allow: GET)" at /var/www/vendor/symfony/http-kernel/EventListener/RouterListener.php line 134
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\DebugHandlersListener::configure".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ValidateRequestListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::setDefaultLocale".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.controller_arguments" to listener "Symfony\Component\H
+2022/01/05 20:00:15 [error] 32#32: *158 FastCGI sent in stderr: "PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\DebugHandlersListener::configure".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ValidateRequestListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::setDefaultLocale".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest".
+PHP message: [error] Uncaught PHP Exception Symfony\Component\HttpKernel\Exception\NotFoundHttpException: "No route found for "POST http://localhost/reward/remove/"" at /var/www/vendor/symfony/http-kernel/EventListener/RouterListener.php line 130
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\DebugHandlersListener::configure".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ValidateRequestListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::setDefaultLocale".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.controller_arguments" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::o
+2022/01/05 20:00:26 [error] 32#32: *160 FastCGI sent in stderr: "PHP message: [info] Matched route "b2b.json.getById".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\DebugHandlersListener::configure".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ValidateRequestListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::setDefaultLocale".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.controller_arguments" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::onControllerArguments".
+PHP message: [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ResponseListener::onKernelResponse".
+PHP message: [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::removeCspHeader".
+PHP message: [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\DisallowRobotsIndexingListener::onResponse".
+PHP message: [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelResponse".
+PHP message: [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\StreamedResponseListener::onKernelResponse".
+PHP message: [debug] Notified event "kernel.finish_request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelFinishReque
+2022/01/05 20:01:26 [error] 32#32: *163 FastCGI sent in stderr: "PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\DebugHandlersListener::configure".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ValidateRequestListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::setDefaultLocale".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest".
+PHP message: [error] Uncaught PHP Exception Symfony\Component\HttpKernel\Exception\NotFoundHttpException: "No route found for "POST http://localhost/reward/remove/"" at /var/www/vendor/symfony/http-kernel/EventListener/RouterListener.php line 130
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\DebugHandlersListener::configure".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ValidateRequestListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::setDefaultLocale".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.controller_arguments" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::o
+2022/01/05 20:02:02 [error] 32#32: *166 FastCGI sent in stderr: "PHP message: [info] Matched route "b2b.json.getById".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\DebugHandlersListener::configure".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ValidateRequestListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::setDefaultLocale".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.controller_arguments" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::onControllerArguments".
+PHP message: [debug] SELECT t0.sale_date AS sale_date_1, t0.client AS client_2, t0.product AS product_3, t0.paid AS paid_4, t0.to_pay AS to_pay_5, t0.incident AS incident_6, t0.created_at AS created_at_7, t0.updated_at AS updated_at_8, t0.id AS id_9 FROM reward t0 WHERE t0.id = ?
+PHP message: [critical] Uncaught PHP Exception ErrorException: "Warning: Undefined array key 0" at /var/www/src/B2b/Json/Infrastructure/Persistence/Doctrine/Repository/Reward/DoctrineRewardRepository.php line 21
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\DebugHandlersListener::configure".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ValidateRequestListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener
+2022/01/05 20:10:46 [error] 32#32: *169 FastCGI sent in stderr: "PHP message: [info] Matched route "b2b.json.getById".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\DebugHandlersListener::configure".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ValidateRequestListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::setDefaultLocale".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.controller_arguments" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::onControllerArguments".
+PHP message: [debug] SELECT t0.sale_date AS sale_date_1, t0.client AS client_2, t0.product AS product_3, t0.paid AS paid_4, t0.to_pay AS to_pay_5, t0.incident AS incident_6, t0.created_at AS created_at_7, t0.updated_at AS updated_at_8, t0.id AS id_9 FROM reward t0 WHERE t0.id = ?
+PHP message: [critical] Uncaught PHP Exception ErrorException: "Warning: Undefined array key 0" at /var/www/src/B2b/Json/Infrastructure/Persistence/Doctrine/Repository/Reward/DoctrineRewardRepository.php line 21
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\DebugHandlersListener::configure".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ValidateRequestListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener
+2022/01/05 20:11:59 [error] 32#32: *171 FastCGI sent in stderr: "PHP message: [info] Matched route "b2b.json.removeById".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\DebugHandlersListener::configure".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ValidateRequestListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::setDefaultLocale".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest".
+PHP message: [critical] Uncaught PHP Exception InvalidArgumentException: "The controller for URI "/reward/remove" is not callable: Controller "b2b.json.controller.reward.removeById" does neither exist as service nor as class." at /var/www/vendor/symfony/http-kernel/Controller/ControllerResolver.php line 81
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\DebugHandlersListener::configure".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ValidateRequestListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::setDefaultLocale".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest".
+PHP message: [debug]
+2022/01/05 20:13:53 [error] 32#32: *173 FastCGI sent in stderr: "PHP message: [info] Matched route "b2b.json.removeById".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\DebugHandlersListener::configure".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ValidateRequestListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::setDefaultLocale".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.controller_arguments" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::onControllerArguments".
+PHP message: [critical] Uncaught PHP Exception TypeError: "B2b\Json\Application\Request\Reward\CreateOneRewardResquest::__construct(): Argument #1 ($saleDate) must be of type string, null given, called in /var/www/src/B2b/Json/Infrastructure/Ui/Http/Controller/Reward/CreateOneRewardController.php on line 25" at /var/www/src/B2b/Json/Application/Request/Reward/CreateOneRewardResquest.php line 16
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\DebugHandlersListener::configure".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ValidateRequestListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to 
+2022/01/05 20:13:53 [error] 32#32: *173 FastCGI sent in stderr: "PHP message: 2022-01-05T20:13:53+00:00 [info] User Deprecated: The "Symfony\Bridge\Doctrine\Logger\DbalLogger" class implements "Doctrine\DBAL\Logging\SQLLogger" that is deprecated Use {@link \Doctrine\DBAL\Logging\Middleware} or implement {@link \Doctrine\DBAL\Driver\Middleware} instead.PHP message: 2022-01-05T20:13:53+00:00 [critical] Uncaught Error: B2b\Json\Application\Request\Reward\CreateOneRewardResquest::__construct(): Argument #1 ($saleDate) must be of type string, null given, called in /var/www/src/B2b/Json/Infrastructure/Ui/Http/Controller/Reward/CreateOneRewardController.php on line 25" while reading upstream, client: 172.24.0.1, server: localhost, request: "POST /reward/remove HTTP/1.1", upstream: "fastcgi://172.24.0.4:9000", host: "localhost"
+2022/01/05 20:14:44 [error] 32#32: *175 FastCGI sent in stderr: "PHP message: [info] Matched route "b2b.json.removeById".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\DebugHandlersListener::configure".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ValidateRequestListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::setDefaultLocale".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest".
+PHP message: [critical] Uncaught PHP Exception TypeError: "B2b\Json\Infrastructure\Ui\Http\Controller\Reward\CreateOneRewardController::__construct(): Argument #1 ($createOneRewardHandler) must be of type B2b\Json\Application\Command\Reward\CreateOneRewardHandler, B2b\Json\Application\Command\Reward\RemoveByIdRewardHandler given, called in /var/www/var/cache/dev/ContainerT8OXEs4/getB2b_Json_Controller_Reward_RemoveByIdService.php on line 23" at /var/www/src/B2b/Json/Infrastructure/Ui/Http/Controller/Reward/CreateOneRewardController.php line 13
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\DebugHandlersListener::configure".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ValidateRequestListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener 
+2022/01/05 20:14:44 [error] 32#32: *175 FastCGI sent in stderr: "PHP message: 2022-01-05T20:14:44+00:00 [info] User Deprecated: The "Symfony\Bridge\Doctrine\Logger\DbalLogger" class implements "Doctrine\DBAL\Logging\SQLLogger" that is deprecated Use {@link \Doctrine\DBAL\Logging\Middleware} or implement {@link \Doctrine\DBAL\Driver\Middleware} instead.PHP message: 2022-01-05T20:14:44+00:00 [critical] Uncaught Error: B2b\Json\Infrastructure\Ui\Http\Controller\Reward\CreateOneRewardController::__construct(): Argument #1 ($createOneRewardHandler) must be of type B2b\Json\Application\Command\Reward\CreateOneRewardHandler, B2b\Json\Application\Command\Reward\RemoveByIdRewardHandler given, called in /var/www/var/cache/dev/ContainerT8OXEs4/getB2b_Json_Controller_Reward_RemoveByIdService.php on line 23" while reading upstream, client: 172.24.0.1, server: localhost, request: "POST /reward/remove HTTP/1.1", upstream: "fastcgi://172.24.0.4:9000", host: "localhost"
+2022/01/05 20:15:12 [error] 32#32: *177 FastCGI sent in stderr: "PHP message: [info] Matched route "b2b.json.removeById".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\DebugHandlersListener::configure".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ValidateRequestListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::setDefaultLocale".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.controller_arguments" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::onControllerArguments".
+PHP message: [debug] SELECT t0.sale_date AS sale_date_1, t0.client AS client_2, t0.product AS product_3, t0.paid AS paid_4, t0.to_pay AS to_pay_5, t0.incident AS incident_6, t0.created_at AS created_at_7, t0.updated_at AS updated_at_8, t0.id AS id_9 FROM reward t0 WHERE t0.id = ?
+PHP message: [critical] Uncaught PHP Exception Error: "Typed property B2b\Json\Infrastructure\Persistence\Doctrine\Entity\Reward::$incident must not be accessed before initialization" at /var/www/src/B2b/Json/Infrastructure/Persistence/Doctrine/Entity/Reward.php line 43
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\DebugHandlersListener::configure".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ValidateRequestListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.re
+2022/01/05 20:15:12 [error] 32#32: *177 FastCGI sent in stderr: "PHP message: 2022-01-05T20:15:12+00:00 [info] User Deprecated: The "Symfony\Bridge\Doctrine\Logger\DbalLogger" class implements "Doctrine\DBAL\Logging\SQLLogger" that is deprecated Use {@link \Doctrine\DBAL\Logging\Middleware} or implement {@link \Doctrine\DBAL\Driver\Middleware} instead.PHP message: 2022-01-05T20:15:12+00:00 [critical] Uncaught Error: Typed property B2b\Json\Infrastructure\Persistence\Doctrine\Entity\Reward::$incident must not be accessed before initialization" while reading upstream, client: 172.24.0.1, server: localhost, request: "POST /reward/remove HTTP/1.1", upstream: "fastcgi://172.24.0.4:9000", host: "localhost"
+2022/01/05 20:16:15 [error] 32#32: *179 FastCGI sent in stderr: "PHP message: [info] Matched route "b2b.json.removeById".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\DebugHandlersListener::configure".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ValidateRequestListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::setDefaultLocale".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.controller_arguments" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::onControllerArguments".
+PHP message: [debug] SELECT t0.sale_date AS sale_date_1, t0.client AS client_2, t0.product AS product_3, t0.paid AS paid_4, t0.to_pay AS to_pay_5, t0.incident AS incident_6, t0.created_at AS created_at_7, t0.updated_at AS updated_at_8, t0.id AS id_9 FROM reward t0 WHERE t0.id = ?
+PHP message: [critical] Uncaught PHP Exception Error: "Typed property B2b\Json\Infrastructure\Persistence\Doctrine\Entity\Reward::$incident must not be accessed before initialization" at /var/www/src/B2b/Json/Infrastructure/Persistence/Doctrine/Entity/Reward.php line 43
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\DebugHandlersListener::configure".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ValidateRequestListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.re
+2022/01/05 20:16:15 [error] 32#32: *179 FastCGI sent in stderr: "PHP message: 2022-01-05T20:16:15+00:00 [info] User Deprecated: The "Symfony\Bridge\Doctrine\Logger\DbalLogger" class implements "Doctrine\DBAL\Logging\SQLLogger" that is deprecated Use {@link \Doctrine\DBAL\Logging\Middleware} or implement {@link \Doctrine\DBAL\Driver\Middleware} instead.PHP message: 2022-01-05T20:16:15+00:00 [critical] Uncaught Error: Typed property B2b\Json\Infrastructure\Persistence\Doctrine\Entity\Reward::$incident must not be accessed before initialization" while reading upstream, client: 172.24.0.1, server: localhost, request: "GET /reward/remove/820fe176-54a6-43fc-b5c3-a45d18578dea HTTP/1.1", upstream: "fastcgi://172.24.0.4:9000", host: "localhost"
+2022/01/05 20:30:52 [error] 32#32: *185 FastCGI sent in stderr: "PHP message: [info] Matched route "b2b.json.removeById".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\DebugHandlersListener::configure".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ValidateRequestListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::setDefaultLocale".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.controller_arguments" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::onControllerArguments".
+PHP message: [debug] SELECT t0.sale_date AS sale_date_1, t0.client AS client_2, t0.product AS product_3, t0.paid AS paid_4, t0.to_pay AS to_pay_5, t0.incident AS incident_6, t0.created_at AS created_at_7, t0.updated_at AS updated_at_8, t0.id AS id_9 FROM reward t0 WHERE t0.id = ?
+PHP message: [critical] Uncaught PHP Exception Doctrine\ORM\ORMInvalidArgumentException: "Detached entity B2b\Json\Infrastructure\Persistence\Doctrine\Entity\Reward@171 cannot be removed" at /var/www/vendor/doctrine/orm/lib/Doctrine/ORM/ORMInvalidArgumentException.php line 173
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\DebugHandlersListener::configure".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ValidateRequestListener::onKernelRequest".
+PHP message: [debug] Notified event "ke
+2022/01/05 20:33:23 [error] 32#32: *187 FastCGI sent in stderr: "PHP message: [info] Matched route "b2b.json.removeById".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\DebugHandlersListener::configure".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ValidateRequestListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::setDefaultLocale".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.controller_arguments" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::onControllerArguments".
+PHP message: [debug] SELECT t0.sale_date AS sale_date_1, t0.client AS client_2, t0.product AS product_3, t0.paid AS paid_4, t0.to_pay AS to_pay_5, t0.incident AS incident_6, t0.created_at AS created_at_7, t0.updated_at AS updated_at_8, t0.id AS id_9 FROM reward t0 WHERE t0.id = ?
+PHP message: [critical] Uncaught PHP Exception ErrorException: "Warning: Undefined variable $doctrineManager" at /var/www/src/B2b/Json/Infrastructure/Persistence/Doctrine/Repository/Reward/DoctrineRewardRepository.php line 26
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\DebugHandlersListener::configure".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ValidateRequestListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKer
+2022/01/05 20:34:26 [error] 32#32: *187 FastCGI sent in stderr: "PHP message: [info] Matched route "b2b.json.removeById".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\DebugHandlersListener::configure".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ValidateRequestListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::setDefaultLocale".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.controller_arguments" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::onControllerArguments".
+PHP message: [debug] SELECT t0.sale_date AS sale_date_1, t0.client AS client_2, t0.product AS product_3, t0.paid AS paid_4, t0.to_pay AS to_pay_5, t0.incident AS incident_6, t0.created_at AS created_at_7, t0.updated_at AS updated_at_8, t0.id AS id_9 FROM reward t0 WHERE t0.id = ?
+PHP message: [debug] "START TRANSACTION"
+PHP message: [debug] DELETE FROM reward WHERE id = ?
+PHP message: [debug] "COMMIT"
+PHP message: [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ResponseListener::onKernelResponse".
+PHP message: [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::removeCspHeader".
+PHP message: [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\DisallowRobotsIndexingListener::onResponse".
+PHP message: [debug] Notified event "kernel.
+2022/01/05 20:35:25 [error] 32#32: *190 FastCGI sent in stderr: "PHP message: [info] Matched route "b2b.json.removeById".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\DebugHandlersListener::configure".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ValidateRequestListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\SessionListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::setDefaultLocale".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest".
+PHP message: [debug] Notified event "kernel.controller_arguments" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::onControllerArguments".
+PHP message: [debug] SELECT t0.sale_date AS sale_date_1, t0.client AS client_2, t0.product AS product_3, t0.paid AS paid_4, t0.to_pay AS to_pay_5, t0.incident AS incident_6, t0.created_at AS created_at_7, t0.updated_at AS updated_at_8, t0.id AS id_9 FROM reward t0 WHERE t0.id = ?
+PHP message: [debug] "START TRANSACTION"
+PHP message: [debug] DELETE FROM reward WHERE id = ?
+PHP message: [debug] "COMMIT"
+PHP message: [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ResponseListener::onKernelResponse".
+PHP message: [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ErrorListener::removeCspHeader".
+PHP message: [debug] Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\DisallowRobotsIndexingListener::onResponse".
+PHP message: [debug] Notified event "kernel.
