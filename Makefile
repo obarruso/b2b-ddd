@@ -1,11 +1,13 @@
 COMPOSE=docker-compose -f docker/docker-compose.yml
 
 start:
+	
 	$(COMPOSE) build
 	$(COMPOSE) up -d --remove-orphans
 
 stop:
 	$(COMPOSE) stop
+	sudo chown -R obarruso:obarruso ./docker/database/data/*
 
 reload:
 	$(COMPOSE) down
