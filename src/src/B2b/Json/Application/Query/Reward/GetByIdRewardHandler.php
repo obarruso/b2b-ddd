@@ -4,7 +4,6 @@ namespace B2b\Json\Application\Query\Reward;
 
 use B2b\Json\Application\Request\Reward\GetByIdRewardRequest;
 use B2b\Json\Domain\Model\Reward\RewardRepository;
-use B2b\Json\Application\Response\Reward\RewardCollectionResponse;
 use B2b\Json\Application\Response\Reward\RewardResponse;
 use B2b\Json\Domain\Model\Reward\RewardId;
 

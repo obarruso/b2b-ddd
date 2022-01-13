@@ -8,21 +8,20 @@ use B2b\Json\Application\Response\Reward\RewardResponse;
 use B2b\Json\Domain\Model\Reward\RewardId;
 use B2b\Json\Domain\Model\Reward\RewardRepository;
 
-class RemoveByIdRewardHandler
-{
+class RemoveByIdRewardHandler {
+
     private RewardRepository $rewardRepository;
 
-    public function __construct(RewardRepository $rewardRepository)
-    {
+    public function __construct(RewardRepository $rewardRepository) {
         $this->rewardRepository = $rewardRepository;
     }
-    public function __invoke(RemoveByIdRewardRequest $removeByIdRewardRequest): AbstractResponse
-    {
+
+    public function __invoke(RemoveByIdRewardRequest $removeByIdRewardRequest): AbstractResponse {
         $reward = $this->rewardRepository->findById(
-            new RewardId($removeByIdRewardRequest->id())
+                new RewardId($removeByIdRewardRequest->id())
         );
         $this->rewardRepository->remove($reward);
         return new RewardResponse($reward);
-
     }
+
 }

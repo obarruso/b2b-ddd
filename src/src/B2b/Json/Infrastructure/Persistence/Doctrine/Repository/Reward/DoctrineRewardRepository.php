@@ -5,6 +5,7 @@ namespace B2b\Json\Infrastructure\Persistence\Doctrine\Repository\Reward;
 use B2b\Json\Domain\Model\Reward\Reward as RewardDomain;
 use B2b\Json\Domain\Model\Reward\RewardCollection;
 use B2b\Json\Domain\Model\Reward\RewardId;
+use B2b\Json\Domain\Model\Reward\RewardNotExist;
 use B2b\Json\Domain\Model\Reward\RewardRepository;
 use B2b\Json\Infrastructure\Persistence\Doctrine\Entity\Reward as RewardEntity;
 use B2b\Json\Infrastructure\Persistence\Doctrine\Repository\DoctrineRepository;
@@ -18,6 +19,9 @@ class DoctrineRewardRepository extends DoctrineRepository implements RewardRepos
     public function findById(RewardId $id): RewardDomain
     {
         $reward = $this->repository->findById($id->value());
+        if(empty($reward)) {
+            throw new RewardNotExist($id);
+        }
         return $reward[0]->toDomain();
     }
     public function remove(RewardDomain $reward): bool
