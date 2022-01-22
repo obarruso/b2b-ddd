@@ -1,5 +1,0 @@
-services:
-  b2b.json.repository.doctrineRewardRepository:
-    class: B2b\Json\Infrastructure\Persistence\Doctrine\Repository\Reward\DoctrineRewardRepository
-    arguments:
-      - '@doctrine.orm.default_entity_manager'

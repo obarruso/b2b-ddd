@@ -1,3 +1,0 @@
-services:
-  b2b.query.test.uuid.getUuidHandler:
-    class: B2b\Json\Application\Query\Test\Uuid\GetUuidHandler

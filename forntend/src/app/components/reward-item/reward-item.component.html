@@ -1,0 +1,13 @@
+<div class="reward">
+    <fa-icon
+    (click)="onDelete(reward)"
+    [ngStyle]="{ 'color': 'red'}"
+    [icon]="faTimes"
+    >
+    </fa-icon>
+    <p>Client {{reward.client}}</p>
+    <p>Product {{reward.product}}</p>
+    <p>Paid {{reward.paid}}
+    <br/><b>To pay:</b> {{reward.toPay}}</p>
+    <p>Incident: {{reward.incident}}</p>
+</div>

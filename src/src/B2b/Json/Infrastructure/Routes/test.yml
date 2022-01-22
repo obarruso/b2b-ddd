@@ -1,8 +1,0 @@
-b2b.json.test:
-  path: /test
-  controller: 'b2b.controller.test.test'
-  methods: [GET]
-b2b.json.uuid:
-  path: /testuuid
-  controller: 'b2b.controller.test.uuid'
-  methods: [GET]

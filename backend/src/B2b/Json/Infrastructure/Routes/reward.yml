@@ -1,0 +1,19 @@
+b2b.json.reward:
+  path: /rewards
+  controller: 'b2b.json.controller.reward.getAll'
+  methods: [GET]
+
+b2b.json.getById:
+  path: /reward/{id}
+  controller: 'b2b.json.controller.reward.getById'
+  methods: [GET]
+
+b2b.json.removeById:
+  path: /reward/remove
+  controller: 'b2b.json.controller.reward.removeById'
+  methods: [POST]
+  
+b2b.json.addreward:
+  path: /reward/add
+  controller: 'b2b.json.controller.reward.createOne'
+  methods: [POST]

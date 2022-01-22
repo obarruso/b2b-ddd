@@ -1,9 +1,0 @@
-services:
-  b2b.controller.test.test:
-    class: B2b\Json\Infrastructure\Ui\Http\Controller\Test\TestController
-    public: true
-  b2b.controller.test.uuid:
-    class: B2b\Json\Infrastructure\Ui\Http\Controller\Test\TestUuidController
-    arguments:
-      - '@b2b.query.test.uuid.getUuidHandler'
-    public: true
