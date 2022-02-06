@@ -1,0 +1,7 @@
+<app-reward-item
+    *ngFor="let reward of rewards"
+    [reward]="reward"
+    (onDeleteReward)="deleteReward(reward)"
+    >
+
+</app-reward-item>

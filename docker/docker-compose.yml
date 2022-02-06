@@ -2,6 +2,7 @@ version: '3'
 
 services:
   database:
+    container_name: database
     build:
       context: ./database
     environment:
@@ -16,6 +17,7 @@ services:
       - ./database/data:/var/lib/mysql
 
   phpmyadmin:
+    container_name: phpmyadmin
     image: phpmyadmin/phpmyadmin:latest
     restart: always
     environment:
@@ -26,6 +28,7 @@ services:
       - "8081:80"
 
   php-fpm:
+    container_name: php-fpm
     build:
       context: ./php-fpm
     depends_on:
@@ -38,6 +41,7 @@ services:
       - ../backend:/var/www
 
   nginx:
+    container_name: nginx
     build:
       context: ./nginx
     volumes:
@@ -50,3 +54,15 @@ services:
       - php-fpm
     ports:
       - "8080:80"
+
+  angular:
+    container_name: angular
+    build:
+      context: ./angular
+    volumes:
+      - ../frontend:/usr/src/app
+    ports:
+      - "4201:4201"
+    command: >
+      bash -c "npm install && ng serve --host 0.0.0.0 --port 4201"
+    
