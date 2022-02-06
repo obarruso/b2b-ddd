@@ -7,16 +7,16 @@ import {Reward} from '../Reward';
   providedIn: 'root'
 })
 export class RewardService {
-  private rewards = 'http://localhost:8080/rewards';
+  private apiUrl = 'http://localhost:8080/rewards';
   constructor(private http: HttpClient) { }
 
   public getRewards(): Observable<Reward[]> {
-    return this.http.get<Reward[]>(this.rewards);
+    return this.http.get<Reward[]>(this.apiUrl);
   }
 
   public deleteReward(reward: Reward): Observable<Reward>
   {
-    const url = `${this.rewards}`;
+    const url = `${this.apiUrl}/${reward.id}`;
     return this.http.delete<Reward>(url);
   }
 }

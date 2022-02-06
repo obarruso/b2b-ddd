@@ -17,7 +17,7 @@ export class RewardsComponent implements OnInit {
     this.getAllRewards();
   }
 
-  private getAllRewards() {
+  getAllRewards() {
     this.rewardService.getRewards().subscribe((data: any)=>{
       this.rewards = data.rewards;
       console.log(this.rewards);
@@ -25,7 +25,14 @@ export class RewardsComponent implements OnInit {
     );
   }
 
-  private deleteReward(reward: Reward) {
-    
+  deleteReward(reward: Reward) {
+    this.rewardService
+    .deleteReward(reward)
+    .subscribe(
+      ()=>{
+        this.rewards = this.rewards.filter((r) => r.id !== reward.id);
+        console.log(this.rewards);
+      }
+    );
   }
 }

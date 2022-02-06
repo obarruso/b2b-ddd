@@ -9,7 +9,7 @@ b2b.json.getById:
   methods: [GET]
 
 b2b.json.removeById:
-  path: /rewards
+  path: /rewards/{id}
   controller: 'b2b.json.controller.reward.removeById'
   methods: [DELETE]
   
