@@ -1,2 +1,3 @@
-/database/data/
-/database/init.sql/
+/docker/database/data/
+/docker/database/init.sql/
+/docker/logs/*

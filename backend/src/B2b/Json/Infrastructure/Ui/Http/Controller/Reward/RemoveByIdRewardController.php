@@ -35,6 +35,9 @@ class RemoveByIdRewardController
                 'errorMesage' => 'The reward <' . $request->get('id') . '> does not exist'
             ], 500);
         }
+        $response->headers->set('Content-Type', 'application/json');
+        // Permitir todos los sitios web
+        $response->headers->set('Access-Control-Allow-Origin', '*');
         return $response;
     }
 }

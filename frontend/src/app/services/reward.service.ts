@@ -17,6 +17,8 @@ export class RewardService {
   public deleteReward(reward: Reward): Observable<Reward>
   {
     const url = `${this.apiUrl}/${reward.id}`;
+    console.log(url);
     return this.http.delete<Reward>(url);
+    
   }
 }
