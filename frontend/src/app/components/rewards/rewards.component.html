@@ -1,3 +1,6 @@
+<app-add-reward
+    (onAddReward)="addReward($event)"
+></app-add-reward>
 <app-reward-item
     *ngFor="let reward of rewards"
     [reward]="reward"

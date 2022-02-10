@@ -38,6 +38,7 @@ class RemoveByIdRewardController
         $response->headers->set('Content-Type', 'application/json');
         // Permitir todos los sitios web
         $response->headers->set('Access-Control-Allow-Origin', '*');
+        $response->headers->set('Access-Control-Allow-Headers', 'X-Requested-With');
         return $response;
     }
 }

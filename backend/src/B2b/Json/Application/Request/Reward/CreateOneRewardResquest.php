@@ -20,7 +20,6 @@ class CreateOneRewardResquest
         $this->product = $product;
         $this->paid = $paid;
         $this->toPay = $toPay;
-        $this->paid = $paid;
         $this->incident = $incident;
     }
 

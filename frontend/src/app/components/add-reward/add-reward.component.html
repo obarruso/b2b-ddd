@@ -1,0 +1,28 @@
+<form class="add-form" (ngSubmit)="onSubmit()">
+    <div class="form-control">
+        <h3>Add Reward</h3>
+        <label for="saleDate">Sale Date</label>
+        <input type="datetime" name="saleDate" [(ngModel)]="saleDate" id="saleDate" placeholder="22-01-15 18:45:09" />
+    </div>
+    <div class="form-control">
+        <label for="client">Client</label>
+        <input type="text" name="client" [(ngModel)]="client" id="client" placeholder="Jhon Smit" />
+    </div>
+    <div class="form-control">
+        <label for="product">Product</label>
+        <input type="text" name="product" [(ngModel)]="product" id="product" placeholder="Water" />
+    </div>
+    <div class="form-control">
+        <label for="paid">Paid</label>
+        <input type="number" name="paid" [(ngModel)]="paid" id="paid" placeholder="0" />
+    </div>
+    <div class="form-control">
+        <label for="toPay">To pay</label>
+        <input type="number" name="toPay" [(ngModel)]="toPay" id="toPay" placeholder="150" />
+    </div>
+    <div class="form-control">
+        <label for="incident">Incident</label>
+        <input type="text" name="incident" [(ngModel)]="incident" id="incident" placeholder="Incident Text" />
+    </div>
+    <input type="submit" value="Save Reward" class="btn btn-block" />
+</form>

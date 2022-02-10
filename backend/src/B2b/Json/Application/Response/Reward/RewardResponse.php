@@ -73,6 +73,7 @@ class RewardResponse extends AbstractResponse
         ];*/
         return [
             'id' => $this->id(),
+            'saleDate' => $this->saleDate(),
             'client' => $this->client(),
             'product' => $this->product(),
             'paid' => $this->paid(),

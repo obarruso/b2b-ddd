@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {HttpClientModule} from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -9,6 +10,7 @@ import { ButtonComponent } from './components/button/button.component';
 import { RewardsComponent } from './components/rewards/rewards.component';
 import { RewardItemComponent } from './components/reward-item/reward-item.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { AddRewardComponent } from './components/add-reward/add-reward.component';
 
 @NgModule({
   declarations: [
@@ -16,13 +18,15 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     HeaderComponent,
     ButtonComponent,
     RewardsComponent,
-    RewardItemComponent
+    RewardItemComponent,
+    AddRewardComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

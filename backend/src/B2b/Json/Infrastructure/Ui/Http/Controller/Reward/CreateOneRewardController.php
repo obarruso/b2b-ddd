@@ -16,6 +16,7 @@ class CreateOneRewardController
     }
     public function __invoke(Request $request)
     {
+        $logger->info("foo");
         $reward = ($this->createOneRewardHandler)(new CreateOneRewardResquest(
             $request->get('saleDate'),
             $request->get('client'),
@@ -24,13 +25,16 @@ class CreateOneRewardController
             $request->get('toPay'),
             $request->get('incident')
         ));
-        // try catch 
+        // @todo try catch 
         $response = new JsonResponse([
             'status' => 'ok',
             'hits' => [
                 $reward->toArray(),
             ]
         ],200);
+        $response->headers->set('Content-Type', 'application/json');
+        // Permitir todos los sitios web
+        $response->headers->set('Access-Control-Allow-Origin', '*');
         return $response;
     }
 }

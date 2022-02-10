@@ -35,4 +35,12 @@ export class RewardsComponent implements OnInit {
       }
     );
   }
+  addReward(reward: Reward) {
+    this.rewardService.addReward(reward).subscribe(
+      (reward)=>
+        (
+          this.rewards.push(reward)
+        )
+    );
+  }
 }

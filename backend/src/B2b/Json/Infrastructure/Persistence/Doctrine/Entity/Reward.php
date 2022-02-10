@@ -39,7 +39,6 @@ class Reward
             $this->product,
             $this->paid,
             $this->toPay,
-            $this->paid,
             $this->incident,
             $this->createdAt,
             $this->updatedAt
