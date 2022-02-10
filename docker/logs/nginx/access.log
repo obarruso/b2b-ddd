@@ -583,3 +583,6 @@
 172.24.0.1 - - [06/Feb/2022:22:44:40 +0000] "GET /rewards HTTP/1.1" 200 1481 "http://localhost:4201/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:96.0) Gecko/20100101 Firefox/96.0"
 172.24.0.1 - - [06/Feb/2022:22:44:42 +0000] "OPTIONS /rewards/8c43340f-13d7-492d-90b9-c690ea1145a0 HTTP/1.1" 405 195219 "http://localhost:4201/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:96.0) Gecko/20100101 Firefox/96.0"
 172.24.0.1 - - [06/Feb/2022:22:45:37 +0000] "GET /rewards HTTP/1.1" 200 1481 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:96.0) Gecko/20100101 Firefox/96.0"
+172.24.0.1 - - [10/Feb/2022:15:51:52 +0000] "GET / HTTP/1.1" 404 32098 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:96.0) Gecko/20100101 Firefox/96.0"
+172.24.0.1 - - [10/Feb/2022:15:51:52 +0000] "GET /favicon.ico HTTP/1.1" 404 194303 "http://localhost:8080/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:96.0) Gecko/20100101 Firefox/96.0"
+172.24.0.1 - - [10/Feb/2022:15:51:58 +0000] "GET /rewards HTTP/1.1" 200 1481 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:96.0) Gecko/20100101 Firefox/96.0"
