@@ -24,7 +24,7 @@ class DoctrineRewardRepository extends DoctrineRepository implements RewardRepos
         }
         return $reward[0]->toDomain();
     }
-    public function remove(RewardDomain $reward): bool
+    public function removeOne(RewardDomain $reward): bool
     {
         $infrastructureReward = RewardEntity::toInfrastructure($reward);
         $toRemoveReward = $this->entityManager->merge($infrastructureReward); 
@@ -56,7 +56,18 @@ class DoctrineRewardRepository extends DoctrineRepository implements RewardRepos
     {
         $infrastructureReward = RewardEntity::toInfrastructure($reward);
         $this->entityManager->persist($infrastructureReward);
-        //$return = $this->entityManager->contains($infrastructureReward);
+        $this->entityManager->flush();
+        return $this->entityManager->contains($infrastructureReward);
+    }
+    public function updateOne(RewardDomain $reward): bool 
+    {
+        $id = $reward->id();
+        $rewardToUpdate = $this->repository->findById($id->value());
+        if(empty($rewardToUpdate)) {
+            throw new RewardNotExist($id);
+        }
+        $infrastructureReward = RewardEntity::toInfrastructure($reward);
+        $this->entityManager->merge($infrastructureReward);
         $this->entityManager->flush();
         return $this->entityManager->contains($infrastructureReward);
     }

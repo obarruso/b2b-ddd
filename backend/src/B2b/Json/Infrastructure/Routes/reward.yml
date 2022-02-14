@@ -1,19 +1,24 @@
-b2b.json.reward:
+b2b.json.getRewardAll:
   path: /rewards
   controller: 'b2b.json.controller.reward.getAll'
   methods: [GET]
 
-b2b.json.getById:
+b2b.json.getRewardById:
   path: /rewards/{id}
   controller: 'b2b.json.controller.reward.getById'
   methods: [GET]
 
-b2b.json.removeById:
+b2b.json.removeRewardById:
   path: /rewards/{id}
   controller: 'b2b.json.controller.reward.removeById'
   methods: [DELETE]
   
-b2b.json.addreward:
+b2b.json.addOneReward:
   path: /rewards
   controller: 'b2b.json.controller.reward.createOne'
   methods: [POST]
+
+b2b.json.updateRewardById:
+  path: /rewards
+  controller: 'b2b.json.controller.reward.updateById'
+  methods: [PUT]

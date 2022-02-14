@@ -1,10 +1,25 @@
 .reward {
-    background-color: #00Bf92;
+    border: 0.1em solid black;
     margin:1em;
     padding: 2em 4em;
     cursor: pointer;
     width: 100%;
 }
+.reward:hover {
+    background-color: #e4e4ff;
+}
 fa-icon {
     float: right;
+}
+.positive {
+    border-left: 1em solid #00Bf92;
+    //background-color: #00Bf92;
+}
+.neutro {
+    border-left: 1em solid lightslategrey;
+    //background-color: lightslategrey;
+}
+.negative {
+    border-left: 1em solid #ff6262;
+    //background-color: #ff6262;
 }

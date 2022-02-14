@@ -22,6 +22,11 @@ export class RewardService {
     return this.http.get<Reward[]>(this.apiUrl);
   }
 
+  public getReward(reward: Reward): Observable<Reward> {
+    const url = `${this.apiUrl}/${reward.id}`;
+    return this.http.get<Reward>(url);
+  }
+
   public deleteReward(reward: Reward): Observable<Reward>
   {
     const url = `${this.apiUrl}/${reward.id}`;
@@ -31,9 +36,6 @@ export class RewardService {
   }
 
   public addReward(reward: Reward): Observable<Reward> {
-    console.log(this.apiUrl);
-    console.log(reward);
-    console.log(httpOptions);
     return this.http.post<Reward>(this.apiUrl, reward, httpOptions);
   }
 }

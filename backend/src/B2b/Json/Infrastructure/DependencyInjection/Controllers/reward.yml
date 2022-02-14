@@ -22,3 +22,9 @@ services:
     arguments:
       - '@b2b.json.command.reward.removeByIdRewardHandler'
     public: true
+
+  b2b.json.controller.reward.updateById:
+    class: B2b\Json\Infrastructure\Ui\Http\Controller\Reward\UpdateByIdRewardController
+    arguments:
+      - '@b2b.json.command.reward.updateByIdRewardHandler'
+    public: true

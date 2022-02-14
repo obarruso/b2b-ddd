@@ -18,3 +18,8 @@ services:
     class: B2b\Json\Application\Command\Reward\RemoveByIdRewardHandler
     arguments:
       - '@b2b.json.repository.doctrineRewardRepository'
+
+  b2b.json.command.reward.updateByIdRewardHandler:
+    class: B2b\Json\Application\Command\Reward\UpdateByIdRewardHandler
+    arguments:
+      - '@b2b.json.repository.doctrineRewardRepository'

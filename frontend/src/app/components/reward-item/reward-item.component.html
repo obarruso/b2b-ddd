@@ -1,4 +1,6 @@
-<div class="reward"><!-- [ngClass]="{toPay: reward.toPay}" -->
+<div class="reward"
+[ngClass]="{'negative': reward.toPay < 0, 'positive': reward.toPay > 0, 'neutro': reward.toPay == 0 }"
+    > 
     <fa-icon
     (click)="onDelete(reward)"
     [ngStyle]="{ 'color': 'red'}"

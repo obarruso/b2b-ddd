@@ -23,9 +23,10 @@ class RemoveByIdRewardHandler {
         $this->reward = $this->rewardRepository->findById(
                 new RewardId($removeByIdRewardRequest->id())
         );
-        $this->rewardRepository->remove($this->reward);
+        $this->rewardRepository->removeOne($this->reward);
         return new RewardResponse($this->reward);
     }
+    
     public function toArray(): array {
         return $this->reward->toArray();
     }

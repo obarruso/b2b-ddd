@@ -31,7 +31,7 @@ class CreateOneRewardController
             'hits' => [
                 $reward->toArray(),
             ]
-        ],200);
+        ],201);
         $response->headers->set('Content-Type', 'application/json');
         // Permitir todos los sitios web
         $response->headers->set('Access-Control-Allow-Origin', '*');

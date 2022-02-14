@@ -1,4 +1,4 @@
-<form class="add-form" (ngSubmit)="onSubmit()">
+<form *ngIf="showAddReward" class="add-form" (ngSubmit)="onSubmit()">
     <div class="form-control">
         <h3>Add Reward</h3>
         <label for="saleDate">Sale Date</label>

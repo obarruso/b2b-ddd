@@ -8,6 +8,7 @@ interface RewardRepository
     public function findAll(): RewardCollection;
     public function insertCollection(RewardCollection $rewardCollection): bool;
     public function insertOne(Reward $reward): bool;
-    public function remove(Reward $reward): bool;
+    public function removeOne(Reward $reward): bool;
+    public function updateOne(Reward $reward): bool;
 
 }

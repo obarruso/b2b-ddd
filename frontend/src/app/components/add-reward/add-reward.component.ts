@@ -1,5 +1,7 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Reward } from '../../Reward';
+import { UiService } from '../../services/ui.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-add-reward',
@@ -14,8 +16,16 @@ export class AddRewardComponent implements OnInit {
   paid: number;
   toPay: number;
   incident: string;
+  showAddReward: boolean;
+  subscription: Subscription;
 
-  constructor() { }
+  constructor(private uiService: UiService) {
+    this.subscription = this.uiService.
+    onToggle().
+    subscribe(
+      (value) => (this.showAddReward = value)
+    );
+  }
 
   ngOnInit(): void {
   }
