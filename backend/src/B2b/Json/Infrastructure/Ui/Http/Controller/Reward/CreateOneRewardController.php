@@ -16,7 +16,7 @@ class CreateOneRewardController
     }
     public function __invoke(Request $request)
     {
-        $logger->info("foo");
+        //$logger->info("foo");
         $reward = ($this->createOneRewardHandler)(new CreateOneRewardResquest(
             $request->get('saleDate'),
             $request->get('client'),

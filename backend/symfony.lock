@@ -109,6 +109,9 @@
     "ramsey/uuid": {
         "version": "4.2.3"
     },
+    "symfony-bundles/json-request-bundle": {
+        "version": "4.1.1"
+    },
     "symfony/cache": {
         "version": "v6.0.2"
     },

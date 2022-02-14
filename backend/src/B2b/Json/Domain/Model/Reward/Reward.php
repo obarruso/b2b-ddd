@@ -72,4 +72,19 @@ class Reward
         return $this->updatedAt;
     }
 
+
+    public function toArray(): array
+    {
+        return [
+            'id' => $this->id(),
+            'saleDate' => $this->saleDate(),
+            'client' => $this->client(),
+            'product' => $this->product(),
+            'paid' => $this->paid(),
+            'toPay' => $this->toPay(),
+            'incident' => $this->incident(),
+            'createdAt' => $this->createdAt(),
+            'updatedAt' => $this->updatedAt(),
+        ];
+    }
 }

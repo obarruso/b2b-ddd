@@ -14,6 +14,7 @@ use B2b\Json\Application\Response\AbstractResponse;
 class CreateOneRewardHandler
 {
     private RewardRepository $rewardRepository;
+    private Reward $reward;
 
     public function __construct(RewardRepository $rewardRepository)
     {
@@ -22,7 +23,7 @@ class CreateOneRewardHandler
 
     public function __invoke(CreateOneRewardResquest $createRewardRequest): AbstractResponse
     {
-        $reward = new Reward(
+        $this->reward = new Reward(
             new RewardId(Id::newUuid()),
             $createRewardRequest->saleDate(),
             $createRewardRequest->client(),
@@ -34,15 +35,17 @@ class CreateOneRewardHandler
 
         //return new RewardResponse($reward);
         
-        if($this->rewardRepository->insertOne($reward))
+        if($this->rewardRepository->insertOne($this->reward))
         {
-            return new RewardResponse($reward);
+            return new RewardResponse($this->reward);
         }else{
             // throw new Exception("Error Processing Request", 1);
             
             return new ErrorResponse('An error while safe in database');
         }
-        
+    }
 
+    public function toArray(): array {
+        return $this->reward->toArray();
     }
 }

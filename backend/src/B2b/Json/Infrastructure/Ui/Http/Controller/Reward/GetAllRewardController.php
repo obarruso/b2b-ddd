@@ -18,11 +18,8 @@ class GetAllRewardController
     public function __invoke(Request $request)
     {
         $rewards = ($this->getAllRewardHandler)();
-        /*$response = new JsonResponse([
-            'status' => 'ok',
-            'rewards' => $rewards->toArray(),
-        ], 200);*/
         $response = new JsonResponse([
+            'status' => 'ok',
             'rewards' => $rewards->toArray(),
         ], 200);
         $response->headers->set('Content-Type', 'application/json');

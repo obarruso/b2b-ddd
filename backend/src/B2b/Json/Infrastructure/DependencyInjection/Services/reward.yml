@@ -1,0 +1,5 @@
+json_request:
+    content_types:
+        - json
+        - jsonld
+        - someouthertype
